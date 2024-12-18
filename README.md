@@ -1,5 +1,6 @@
 # Projek-DAP
 Projek Mata Kuliah Data Analytic Programming
+Prediksi Performa Siswa Berdasarkan Faktor Akademik dan Sosial menggunakan Model SVM
 ```
 library(e1071)
 library(caret)
