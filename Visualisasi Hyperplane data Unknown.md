@@ -1,4 +1,4 @@
-#Visualisasi Hyperplane data Unknown.R
+# Visualisasi Hyperplane data Unknown.R
 
 ```
 library(e1071)
@@ -25,7 +25,7 @@ print(conf_matrix_na)
 ```
 Menghitung dan mencetak matriks kebingungan untuk mengevaluasi akurasi model.
 
-##Data untuk Teacher Quality vs Motivation Level
+## Data untuk Teacher Quality vs Motivation Level
 ```
 data_teacher <- trainData %>%
   select(Teacher_Quality, Motivation_Level, Performance)
@@ -45,7 +45,7 @@ summary_table_teacher <- data_teacher %>%
 ```
 Menghitung jumlah data untuk setiap kombinasi Teacher_Quality dan Motivation_Level.
 
-###Plot untuk Teacher Quality vs Motivation Level
+### Plot untuk Teacher Quality vs Motivation Level
 ```
 plot_teacher <- ggplot(data = summary_table_teacher, aes(x = Teacher_Quality, y = Motivation_Level)) +
   geom_tile(aes(fill = Count), color = "white", alpha = 0.8) +
@@ -66,7 +66,7 @@ plot_teacher <- ggplot(data = summary_table_teacher, aes(x = Teacher_Quality, y 
 ```
 Membuat visualisasi distribusi data antara Teacher_Quality dan Motivation_Level.
 
-##Data untuk Distance from Home vs Motivation Level
+## Data untuk Distance from Home vs Motivation Level
 ```
 data_distance <- trainData %>%
   select(Distance_from_Home, Motivation_Level, Performance)
@@ -86,7 +86,7 @@ summary_table_distance <- data_distance %>%
 ```
 mengelompokkan data berdasarkan kombinasi Distance_from_Home dan Motivation_Level, lalu menghitung berapa banyak entri (baris) yang ada untuk setiap kombinasi tersebut. Hasilnya disimpan dalam summary_table_distance, yang menunjukkan seberapa sering setiap kombinasi muncul.
 
-###Plot untuk Distance from Home vs Motivation Level
+### Plot untuk Distance from Home vs Motivation Level
 ```
 plot_distance <- ggplot(data = summary_table_distance, aes(x = Distance_from_Home, y = Motivation_Level)) +
   geom_tile(aes(fill = Count), color = "white", alpha = 0.8) +
@@ -116,7 +116,7 @@ Membuat visualisasi distribusi data antara Distance_From_Home dan Motivation_Lev
 >theme_minimal: Mengatur tema plot menjadi tampilan minimalis.
 >theme: Mengatur agar teks pada sumbu x miring 45 derajat untuk kemudahan membaca, dan menghilangkan grid utama dan minor.
 
-###Menampilkan plot
+### Menampilkan plot
 ```
 print(plot_teacher)
 print(plot_distance)
