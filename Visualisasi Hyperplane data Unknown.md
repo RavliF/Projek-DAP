@@ -1,14 +1,6 @@
 # Visualisasi Hyperplane data Unknown.R
 
 ```
-library(e1071)
-library(caret)
-library(dplyr)
-library(ggplot2)
-```
-Mengimpor paket-paket yang diperlukan untuk analisis SVM, manipulasi data, dan visualisasi.
-
-```
 svm_model_na <- svm(Performance ~ Teacher_Quality + Parental_Education_Level + Distance_from_Home
                  , data = trainData, kernel = "radial")
 ```
