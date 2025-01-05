@@ -1,4 +1,4 @@
-# Visualisasi Hyperlane-SVM.
+# Visualisasi Hyperlane SVM
 SVM adalah metode pembelajaran mesin yang digunakan untuk klasifikasi dan regresi. Algoritma ini bekerja dengan menemukan hyperplane terbaik yang memisahkan data ke dalam dua kelas. Hyperplane ini adalah garis (dalam 2D), bidang (dalam 3D), atau ruang berdimensi lebih tinggi yang membagi data. Tujuannya adalah untuk memilih hyperplane yang memaksimalkan margin antara kelas yang berbeda.
 
 ```
