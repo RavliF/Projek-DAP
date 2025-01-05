@@ -24,7 +24,6 @@ conf_matrix_na <- confusionMatrix(predictions_na, testData$Performance)
 print(conf_matrix_na)
 ```
 Menghitung dan mencetak matriks kebingungan untuk mengevaluasi akurasi model.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ##Data untuk Teacher Quality vs Motivation Level
 ```
